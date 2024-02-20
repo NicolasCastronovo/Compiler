@@ -1,0 +1,54 @@
+ /* Test while playPlus */
+
+ #import "world.map"
+
+     b as boolean;
+     i as integer;
+     j as integer;
+     s as char;
+     t1 as boolean[5];
+     t2 as integer[42];
+     t3 as integer[10, 10];
+
+main as function():void
+do
+
+    b := true;
+
+    for i:= 0 to (i < 10) do
+       for j := 0 to (j < 10) do
+          if((i % 2 = 0) and (j % 2 = 0)) then
+            t3[i,j] := i;
+            left(i);
+            b := false;
+          else
+            t3[i,j] := j;
+            right(j);
+            b := true;
+          end
+          j := j + 1;
+      end
+       i := i + 1;
+     end
+
+
+     for i:= 0 to (i < 10) do
+           for j:= 0 to (j < 10) do
+               if((i % 2 = 0) and (j % 2 = 0)) then
+                   if(t3[i, j] <> 0 ) then
+                     right(i);
+                     b := true;
+                   end
+               else
+                 if(t3[i, j] <> 1) then
+                    left(j);
+                    b := false;
+                 end
+               end
+               j := j + 1;
+           end
+            i := i + 1;
+          end
+ dig();
+
+ end

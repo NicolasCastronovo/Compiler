@@ -1,0 +1,59 @@
+/* Test If else playPlus */
+
+#import "world.map"
+
+    x as integer;
+    y as integer;
+    b as boolean;
+    z as integer[5];
+    t1 as boolean[5];
+    t2 as boolean[42, 42];
+
+main as function():void
+do
+   x := 0;
+   b := true;
+   b := (true and (not b));
+
+        if (b) then
+           y := y - 1;
+         end
+
+        if ((b or true) and false) then
+        	t1[0] := true;
+        	t1[1] := false;
+        	t1[2] := true or false;
+
+        end
+
+        t1[0] := b;
+
+        if (t1[0] and t1[1]) then
+
+           b := true;
+        end
+
+        if (not b) then
+
+        	z[0] := z[1] + z[2];
+        end
+
+		y := y + 1;
+
+
+        if (y <> 0) then
+        	b := false;
+        end
+
+        t2[x + 1, y + 1] := true;
+
+        if (t2[x + 1, y + 1] = false) then
+        	x := (x - 67) + ( y - 45);
+        end
+
+
+        b := t1[x + 1];
+
+dig();
+
+end

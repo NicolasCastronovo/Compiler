@@ -1,0 +1,21 @@
+/* My comments */
+
+#import "world.map"
+
+
+ f1 as char;
+ fct1 as function():char
+   do
+     f1 := 'w';
+     fct1 := f1;
+   end
+
+main as function():void
+do
+   if(fct1() = 'w') then
+   	 left();
+   	 right();
+   end
+   dig();
+
+end

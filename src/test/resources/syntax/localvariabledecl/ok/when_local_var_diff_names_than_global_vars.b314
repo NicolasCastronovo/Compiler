@@ -1,0 +1,123 @@
+/* Test while playPlus */
+
+ #import "world.map"
+
+    b1 as boolean;
+             b2 as boolean;
+             i1 as integer;
+             i2 as integer;
+             i3 as integer;
+             s1 as char;
+             s2 as char;
+             v1 as boolean[5, 7];
+             v2 as integer[42];
+              f1 as char;
+
+     fct1 as function():char
+       do
+       l1 as boolean;
+       l2 as integer;
+       l3 as char;
+       	f1 := 'a';
+       	fct1:= f1;
+      end
+
+   fct2 as function(x, y as integer):integer
+       do
+          loc1 as integer;
+          loc2 as integer;
+          loc3 as char;
+          loc4 as integer[5];
+          s1 as boolean;
+
+       	loc1 := (loc1 + 2) - loc4[0 + 1 - i1];
+       	loc3 := 'q';
+       	fct2 := loc1;
+    end
+
+
+   f3 as boolean;
+
+    fct3 as function():boolean
+        do
+             loc1 as integer;
+             loc2 as integer;
+             loc3 as char;
+             loc4 as integer[5];
+             f1 as integer;
+
+        	f3 := true;
+        	 fct3 := f3;
+        end
+
+        fct4 as function():char
+         do
+
+            f1 := '5';
+        	fct4 := f1;
+         end
+
+        fct5 as function(x as integer, y as boolean, z as char):integer
+         do
+          loc1 as integer;
+          loc2 as integer;
+          loc3 as char;
+          loc4 as integer[5];
+          v as integer[42];
+
+            x := fct2(5, 3);
+        	fct5 := x;
+        end
+
+  i as integer;
+  j as integer;
+  x as char;
+  k as integer;
+  l as integer;
+  m as char;
+  n as integer;
+  o as integer;
+  p as char;
+
+
+
+main as function():void
+do
+      while((true and b1) or (v1[0, i1 + 2 * 1] = true))
+      	do
+      		if(b1 and (i1 = 2)) then
+      			while(i1 < i3) do
+      				i2 := i1 + 1;
+      			end
+      		else
+      			if(s1 = '5')
+      			then
+      			 left(i1);
+      			end
+      	    end
+      	end
+
+    while((i2 > 5) and (v2[4] < 42)) do
+
+        	s1 := fct1();
+        	if(fct5(i1 + 2, i1 > 5, s1) > 2) then
+        		left(i1);
+        	end
+        	while(fct3() <> true) do
+        		up();
+        	end
+        	right(i2);
+    	end
+
+
+     n := 0;
+     i := 0;
+
+     while(i < 10)
+     do
+       left();
+       i := i + 1;
+     end
+
+	dig();
+end

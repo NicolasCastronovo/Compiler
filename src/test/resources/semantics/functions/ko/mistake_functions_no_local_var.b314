@@ -1,0 +1,67 @@
+/* Test fonction  playPlus */
+
+ #import "world.map"
+
+
+ f1 as boolean;
+
+
+ fct1 as function(x as integer):boolean
+ do
+   f1 := true and (x < 5);
+   left(2);
+   fct1 := f1;
+ end
+
+ f2 as integer;
+
+ fct2 as function(x as integer): integer
+  do
+    f2 := x + 5;
+    up(2);
+    fct2 := f2;
+  end
+
+  f3 as char;
+
+fct3 as function(x as boolean): char
+  do
+     f3 := 'c';
+     right(7);
+     fct3 := f3;
+  end
+
+f4 as char;
+
+fct4 as function(): char
+ do
+    f4 := '5';
+    fct4 := f4;
+ end
+
+b2 as char[5] = ('a', 'f', 'n',  'k', 'p');
+
+ enum CAR = (RED, BLUE, GREEN);
+
+
+main as function():void
+do
+    if (not(fct1('5') = false)) then
+       up(6);
+    end
+
+    if (fct2(42) >= 40) then
+        right(2);
+     end
+
+     if (not(fct1(5) = false)) then
+        left(1);
+     end
+
+     if (fct1('a', 3) <> true) then
+         down();
+     end
+
+    dig();
+
+end

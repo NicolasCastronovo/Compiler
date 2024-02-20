@@ -1,0 +1,12 @@
+// Carte de Jeu
+// Exemple
+
+map: 8 8
+G G Q G A G A X
+A G G G G P G A
+A G G G G G G G
+A G B @ G Q G G
+A P G G G P G B
+A G G G G B G G
+P G G P G P G P
+G G Q A A A A A

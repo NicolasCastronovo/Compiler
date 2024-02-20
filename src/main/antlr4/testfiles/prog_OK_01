@@ -1,0 +1,17 @@
+// Comments are between delimiters
+/* Input map file */
+#import "worldExample.map"
+//Execute procedure
+execute as function () : void
+do
+left(1);
+down(2);
+right(3);
+up(2);
+end
+// Main procedure
+main as function ( ) : void
+do
+execute();
+dig();
+end

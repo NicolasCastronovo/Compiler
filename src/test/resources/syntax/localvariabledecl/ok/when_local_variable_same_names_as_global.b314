@@ -1,0 +1,44 @@
+/* Test playPlus */
+
+ #import "world.map"
+
+    b1 as boolean;
+     b2 as boolean;
+     i1 as integer;
+     i2 as integer;
+     i3 as integer;
+     s1 as char;
+     s2 as char;
+     v1 as boolean[5, 7];
+     v2 as integer[42];
+     f1 as char;
+
+
+
+ fct1 as function():boolean
+ do
+        loc1 as integer;
+     	loc2 as boolean;
+     	loc3 as char;
+     	loc4 as integer[5];
+
+
+     	loc2 := true;
+     	loc1 := 34;
+     	b1 := loc2 and (loc1 < 42);
+     	fct1 := b1;
+ end
+
+ main as function():void
+ do
+
+ while(fct1() <> true)
+  do
+   left();
+   right();
+  end
+
+
+ dig();
+
+ end

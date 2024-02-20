@@ -1,0 +1,11 @@
+#import "test.map"
+testvar as integer = 5;
+testrec as record
+    test1 as boolean = false;
+    test2 as integer = 4;
+end;
+
+main as function ( ) : void
+do
+dig();
+end

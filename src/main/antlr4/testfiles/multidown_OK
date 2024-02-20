@@ -1,0 +1,19 @@
+#import "world.map"
+
+    b as boolean;
+    i as integer;
+    s as boolean[2, 5];
+
+main as function():void
+do
+
+down();
+dig();
+
+down(7+8);
+
+down();
+
+dig();
+
+end

@@ -1,0 +1,57 @@
+/* Test fonction  playPlus */
+
+#import "world.map"
+
+    z as integer;
+    f as integer;
+
+facto as function(x as integer):integer
+do
+
+ if((x < 0) or (x = 0))
+  then
+   facto := 1;
+  else
+   facto := x * facto(x - 1);
+  end
+
+
+end
+
+b2 as boolean[5] = (true, false, true, false, true);
+
+enum NUMBER = (ONE, TWO, THREE);
+
+
+  D1 as record
+        a as integer[5];
+        b as char;
+        c as boolean[5,3];
+  end;
+
+  D2 as record
+        a as integer[5];
+        b as char;
+        c as boolean[5,3];
+         D2 as record
+           b as char;
+           c as integer;
+           d as boolean;
+         end;
+   end;
+
+  x as integer;
+
+main as function():void
+do
+
+   x := 5;
+   z := facto(x);
+
+   if (not (z = (5*4*3*2*1))) then
+       right(5);
+   end
+
+   dig();
+
+end

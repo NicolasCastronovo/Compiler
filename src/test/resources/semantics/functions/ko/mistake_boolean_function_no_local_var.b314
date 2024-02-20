@@ -1,0 +1,24 @@
+/* My comments */
+
+#import "world.map"
+
+
+  f1 as boolean;
+  x as integer;
+
+ fct1 as function(): boolean
+  do
+       f1 := true;
+     fct1 := x;
+   end
+
+main as function():void
+do
+   if(not(fct1())) then
+   	 left();
+   	 right();
+   	 up();
+   end
+   dig();
+
+end

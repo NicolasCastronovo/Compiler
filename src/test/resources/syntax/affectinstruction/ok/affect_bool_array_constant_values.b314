@@ -1,0 +1,21 @@
+/* My comments */
+
+#import "world.map"
+
+    b as boolean[42];
+    b2 as boolean[42, 42];
+    i as integer;
+    s as char[5];
+
+main as function():void
+do
+   s[0] := 'c';
+   b2[0, i] := not(false and (0 > 45 + 3));
+   b[0] := false;
+   s[1] := 'b';
+   s[2] := 'f';
+
+dig();
+
+
+end

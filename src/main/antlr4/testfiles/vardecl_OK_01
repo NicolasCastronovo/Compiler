@@ -1,0 +1,11 @@
+#import "file.map"
+testid as integer = 5;
+testid as record
+    test1 as integer = 1;
+    test2 as boolean = false;
+end;
+
+main as function(): void
+do
+left(1);
+end;

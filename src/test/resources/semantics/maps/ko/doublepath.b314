@@ -1,0 +1,27 @@
+/* Test */
+
+#import "mapmap.map"
+
+i as integer;
+
+fct1 as function():integer
+do
+    x as integer;
+    x := 5;
+    left(1);
+    down(1);
+    right(3);
+    up(2);
+    fct1 := x;
+
+end
+
+main as function():void
+do
+
+i := fct1() + 5;
+
+dig();
+
+
+end

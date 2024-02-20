@@ -1,0 +1,34 @@
+/* Test */
+
+#import "world.map"
+
+ i as integer;
+ b as boolean;
+
+fct1 as function():integer
+ do
+
+    x as integer;
+    x := 5;
+    left(1);
+    down(1);
+    right(2);
+    up(5);
+    left();
+
+    fct1:= x;
+
+
+end
+
+main as function():void
+do
+ i := 5;
+ i := i + 5;
+ b := false;
+ i := fct1() + 1;
+ b := true;
+
+dig();
+
+end

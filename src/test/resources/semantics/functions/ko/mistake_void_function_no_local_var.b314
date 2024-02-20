@@ -1,0 +1,20 @@
+/* My comments */
+
+#import "world.map"
+
+ f1 as integer;
+ x as integer;
+
+
+ fct1 as function():void
+  do
+       f1 := 34;
+
+  end
+
+main as function():void
+do
+ x := fct1(5, 6);
+ dig();
+
+end

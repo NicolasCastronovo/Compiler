@@ -1,0 +1,63 @@
+/* Test If else playPlus */
+
+#import "world.map"
+
+    x as integer;
+    y as integer;
+    z as char[5];
+    t1 as boolean[5];
+    t2 as boolean[42, 42];
+
+main as function():void
+do
+   x := 0;
+
+   if ((true and false) or true) then
+         right(2);
+         left(4);
+         if (not (false and x > 10) or (true and false))
+         then
+              if (true and false) then
+                x := x + 1;
+                y := x + y;
+                z[0] := 'a';
+                z[1] := 'b';
+                t1[0] := false;
+                t1[0] := x > 5;
+               end
+         else
+         x := x * 2;
+         y := y - 1;
+         dig();
+         end
+    else
+       left();
+       x := x / 2;
+       if(not(x >= 5 and false) or (not(false and true)))
+       then
+        y := ((x + 2) * x) + ((y -1)/2);
+        down(3);
+        left(2);
+       else
+        if((true and false) or false)
+          then
+           t2[0,0] := false;
+           t2[0,1] := true;
+           t2[0,2] := (x + 5)/ 2 > y;
+          end
+       up(2);
+       left(3);
+       end
+    end
+   if ((false or ((x > 5)) and true)) then
+         right(4);
+         x := x / 2;
+    else
+        right(1);
+        x := x * 2;
+    end
+
+
+dig();
+
+end

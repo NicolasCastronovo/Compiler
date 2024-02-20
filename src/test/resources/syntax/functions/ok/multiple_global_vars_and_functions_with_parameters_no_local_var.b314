@@ -1,0 +1,69 @@
+/* My comments */
+
+#import "world.map"
+
+	b1 as boolean;
+	b2 as boolean;
+	b3 as boolean;
+	f1 as char;
+
+
+    fct1 as function(x as integer):char
+    do
+    	f1 := 'b';
+    	fct1 := f1;
+    end
+
+    i1 as integer;
+	b4 as boolean;
+	v2 as boolean[5, 7];
+    v3 as integer[42, 58];
+    v4 as integer[42];
+	b5 as boolean;
+
+    fct2 as function(x as integer, y as boolean):integer
+    do
+    	x := x * (x + 2000);
+    	fct2 :=  x;
+    end
+
+    f3 as boolean;
+
+    fct3 as function():boolean
+    do
+        f3 := (false and true);
+
+    	fct3 := f3;
+    end
+
+	s1 as boolean;
+	i2 as integer;
+	b6 as boolean;
+    i3 as integer;
+    s2 as boolean;
+
+    fct4 as function():boolean
+    do
+        s2 := fct3();
+    	fct4 := s2;
+    end
+
+    fct5 as function(x as integer, y as boolean, z as char): integer
+    do
+      if(fct4())
+    	then
+    	 x := fct2(5, true);
+
+       else
+    	x := fct2(5, false);
+       end
+
+     fct5 := x;
+    end
+
+main as function():void
+do
+
+dig();
+
+end

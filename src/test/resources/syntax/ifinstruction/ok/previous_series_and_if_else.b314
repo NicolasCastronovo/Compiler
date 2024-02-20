@@ -1,0 +1,79 @@
+/* Test If else playPlus */
+
+#import "world.map"
+
+    x as integer;
+    y as integer;
+    b as boolean;
+    z as integer[5];
+    t1 as boolean[5];
+    t2 as boolean[42, 42];
+
+
+main as function():void
+do
+   x := 2;
+   y := 3;
+   b := true;
+   b := (true and (not b));
+
+        if (b) then
+           y := y - 1;
+         else
+           x := x - 1;
+         end
+
+        if ((b  or true) and false) then
+        	t1[0] := true;
+        	t1[1] := false;
+        	t1[2] := (true or false);
+
+        else
+             t1[3] := true;
+             t1[4] := (true or true);
+
+        end
+
+        t1[0] := b;
+
+        if (t1[0] and t1[1]) then
+
+           b := true;
+           fight();
+        else
+           b := t1[x + 1];
+
+        end
+
+        if (not b) then
+
+        	z[0] := z[1] + z[2];
+        	up();
+        else
+        y := y + 1;
+        left(6);
+        right(8);
+        end
+
+        if (y = 0) then
+        	b := false;
+        	down(5);
+        else
+         t2[x + 1, y + 1] := true;
+        end
+
+        if (t2[x + 1, y + 1] = true) then
+        	x := (x - 67) + ( y - 45);
+        else
+
+        fight();
+        dig();
+        up(34);
+        left(23);
+
+        end
+
+
+dig();
+
+end
