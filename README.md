@@ -1,13 +1,14 @@
 # LEGO Mindstorms NXT Compiler
 
-      \_/
-     (* *)
-    __)#(__
-   ( )...( )(_)
-   || |_| ||//
->==() | | ()/
-    _(___)_
-   [-]   [-]
+          \_\
+         (_0o)
+        __) w_
+       ( )...()
+       || | |I|
+       || | |()__/
+       /\(___)
+      _-"""""""-_""-_
+      -,,,,,,,,- ,,-
 
 Compiler written in Java. It converts simple words instruction executed by a controller into NeXT Byte Codes (NBC).
 
